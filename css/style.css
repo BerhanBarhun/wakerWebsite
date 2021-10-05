@@ -985,4 +985,9 @@ select {
   .newsletter p {
     text-align: center;
   }
+  
+  .team h2 {
+    padding-top: 120px;
+  }
+
 }
