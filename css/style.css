@@ -158,7 +158,7 @@ ul {
   text-align: center;
 }
 .section-title span {
-  color: var(--color-1);
+  color: var(--main-color);
 }
 .owl-carousel .owl-dots {
   padding: 0 15px;
@@ -841,6 +841,9 @@ select {
 }
 .team h2 {
   padding-top: 50px;
+}
+.team span {
+  color: var(--color-1);
 }
 .team-item img {
   height: 115px;
