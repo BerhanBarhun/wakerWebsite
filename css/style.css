@@ -842,7 +842,8 @@ select {
 .team h2 {
   padding-top: 50px;
 }
-.team span {
+.team .section-title span,
+.faq .section-title span {
   color: var(--color-1);
 }
 .team-item img {
@@ -917,6 +918,16 @@ select {
 }
 
 @media (max-width: 764px) {
+  .team {
+    padding: 0 !important;
+  }
+  .team-item {
+    padding: 30px;
+    margin-bottom: 10px;
+  }
+  .team-item p {
+    font-size: 12px;
+  }
   .section-padding {
     padding-left: 15px;
     padding-right: 15px;
