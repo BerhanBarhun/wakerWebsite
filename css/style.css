@@ -7,11 +7,11 @@ html {
   scroll-behavior: smooth;
 }
 :root {
-  --main-color: #004bf4;
+  --main-color: #4984b8;
   --main-color-light: rgba(0, 75, 244, 0.75);
-  --color-1: #ec4474;
-  --color-2: #f5ae10;
-  --color-3: #09d69c;
+  --color-1: #df688a;
+  --color-2: #ecb848;
+  --color-3: #64cfb1;
   --bg-dark: #2b2c2f;
   --main-to-dark-color: var(--main-color);
   --dark-to-main-color: var(--bg-dark);
@@ -118,7 +118,6 @@ ul {
     transform: translateY(0px);
   }
 }
-
 .effect-wrap .effect {
   position: absolute;
   z-index: 2;
@@ -126,22 +125,19 @@ ul {
 .effect-wrap .effect-1 {
   left: 35%;
   top: 20%;
-  font-size: 25px;
-  color: var(--color-2);
+  width: 85px;
   animation: spin_01 15s linear infinite;
 }
 .effect-wrap .effect-2 {
   right: 15%;
   top: 35%;
-  font-size: 30px;
-  color: rgba(255, 255, 255, 0.5);
+  width: 85px;
   animation: spin_01 15s linear infinite;
 }
 .effect-wrap .effect-3 {
   left: 15%;
   bottom: 25%;
-  font-size: 30px;
-  color: var(--color-1);
+  width: 85px;
   animation: bounceTop_01 15s linear infinite;
 }
 .section-padding {
@@ -217,7 +213,7 @@ ul {
   bottom: 0;
   right: 0;
   height: 1px;
-  background-color: var(--black-000);
+
   transition: all 0.5s ease;
   transform: scale(0);
 }
@@ -540,7 +536,9 @@ ul {
 
 /*Newsletter  */
 .newsletter {
-  box-shadow: inset var(--shadow-black-200);
+  background-color: var(--black-100);
+
+  box-shadow: var(--shadow-black-300);
 }
 .wrapper {
   width: 100%;
@@ -604,8 +602,6 @@ ul {
 /*Pitch game*/
 
 .pitch-game {
-  background-color: var(--black-100);
-
   box-shadow: var(--shadow-black-200);
 }
 .pitch-game .btn-1,
@@ -836,11 +832,20 @@ select {
 }
 
 /*team*/
+.team-img {
+  padding-top: 34px;
+}
+.team-img img {
+  width: 100%;
+}
+.team-title {
+  position: absolute;
+  top: 520px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .team {
   background-color: var(--main-color);
-}
-.team h2 {
-  padding-top: 50px;
 }
 .team .section-title span,
 .faq .section-title span {
@@ -861,7 +866,7 @@ select {
   z-index: 1;
   overflow: hidden;
   background-color: #f7f7f7;
-  margin-bottom: 30px;
+  margin-top: 20px;
 }
 
 .team-item h3 {
@@ -878,6 +883,53 @@ select {
   margin: 0 0 30px;
 }
 
+/*library*/
+.library {
+  background-color: var(--black-100);
+}
+.panel-item {
+  margin-top: 35px;
+}
+.library-part {
+  padding-top: 20px;
+}
+.label {
+  font-size: 14px;
+  text-transform: capitalize;
+  font-weight: 600;
+  color: var(--main-color);
+}
+.panel {
+  background-color: var(--black-000);
+  box-shadow: var(--shadow-black-200);
+  padding: 20px;
+}
+.panel-footer {
+  padding-top: 20px;
+}
+.btn-library {
+  background-color: var(--black-100);
+  padding: 5px 12px;
+  margin-left: 7px;
+  border-radius: 30px;
+  border: none;
+  color: var(--main-color);
+  font-size: 16px;
+  text-transform: capitalize;
+  transition: all 0.5s ease;
+  box-shadow: inset var(--shadow-black-100);
+  font-weight: 500;
+}
+.btn-library:focus {
+  box-shadow: var(--shadow-black-300);
+}
+
+.btn-library:hover {
+  color: var(--black-000);
+  background-color: var(--main-color);
+}
+
+/*responsive*/
 @media (max-width: 991px) {
   .faq {
     height: fit-content;
@@ -985,9 +1037,8 @@ select {
   .newsletter p {
     text-align: center;
   }
-  
+
   .team h2 {
     padding-top: 120px;
   }
-
 }

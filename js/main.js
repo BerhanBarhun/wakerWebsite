@@ -55,6 +55,9 @@ $.scrollIt({
 $(".nav-link").on("click",function(){
   $(".navbar-collapse").collapse("hide");
 })
-
+/*library */
+$(function(){
+  $('.tip').tooltip();
+});
 
 });
